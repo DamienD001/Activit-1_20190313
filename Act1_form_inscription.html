@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>enregistrement</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="Act1_form_inscription.css">
+
+	</head>
+	<body>
+		<form class="formulaire" method="POST" action="Act1_inscription.php" onsubmit="return verifInscriptionJS()">
+			<fieldset>
+				<legend><h1>S'enregistrer</h1></legend>
+				<input type="text" name="nom" placeholder="nom" required>
+				<div id="messageNom"></div>
+				<input type="text" name="prenom" placeholder="prénom" required>
+				<div id="messagePrenom"></div>
+				<input type="text" name="fonction" placeholder="fonction/spécialité" required>
+				<div id="messageFonction"></div>
+				<input type="email" name="adrMail" placeholder="adresse mail" required>
+				<div id="messageAdrMail"></div>
+				<input type="date" name="dateNaiss" placeholder="jj/mm/aaaa" required>
+				<div id="messageDateNaiss"></div>
+				<input type="password" name="pwd" placeholder="password" required>
+				<div id="messagePwd"></div>
+				<input type="password" name="repeatPwd" placeholder="repeat password" required>
+				<div id="messageRepeatPwd"></div>
+				<div class="formulaire_Boutons">		
+					<input type="submit" name="envoyer" value="Envoyer">
+					<input type="reset" name="effacer" value="Effacer">
+				</div>
+			</fieldset>
+		</form>
+		<a href="">je possède déja un compte</a>
+
+		<script src="Act1_form_inscription.js"></script>
+
+	</body>
+</html>
